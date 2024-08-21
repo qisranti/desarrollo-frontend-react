@@ -1,8 +1,8 @@
-import Logo from "./components/Logo";
-import Description from "./components/Description";
+import Logo from "./Default/components/Logo";
+import Description from "./Default/components/Description";
 import OpenLink from "../components/OpenLink";
 import LessonInfo from "../components/LessonInfo";
-import Contador from "./components/Contador";
+import Contador from "./Default/components/Contador";
 
 const Default = () => {
     return (
