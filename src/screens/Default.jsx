@@ -6,7 +6,7 @@ import Contador from "./Default/components/Contador";
 
 const Default = () => {
     return (
-        <>
+        <div className="App-header">
             <Contador />
             <Logo />
             <Description />
@@ -26,7 +26,7 @@ const Default = () => {
                 number="2" 
                 title="Context API para la gestión del estado global en aplicaciones react" 
             />
-        </>
+        </div>
     );
 };
 
