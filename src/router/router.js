@@ -5,6 +5,8 @@ import Product from "../screens/Product";
 import App from "../App";
 import LoginForm from "../screens/Forms/LoginForm";
 
+const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-react' : '/';
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
             }
         ],
     },
-]);
+],
+{
+    basename: basename
+}
+);
 
 export default router;
