@@ -93,6 +93,7 @@ form div input {
 nav {
   background-color: #333;
   padding: 1rem;
+  align-items: center;
 }
 
 ul {

@@ -15,9 +15,15 @@ const LoginForm = () => {
     const dispatch = useDispatch();
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(values);
-        dispatch(saveFormData(values));        
-        setShowModalInfo(true);
+        // console.log(values);
+        if(values.password === form.formData.password){
+            // console.log('Login correcto');
+            dispatch(saveFormData(values));
+        }else{
+            // console.log('Login incorrecto');
+            setShowModalInfo(true);
+        }
+        
     }
 
     return (
@@ -27,7 +33,7 @@ const LoginForm = () => {
             transition={{ duration: 0.5 }}>
             <ModalInfo 
                     visible={showModalInfo} 
-                    message="Bienvenidos al Modulo 7" 
+                    message="Password Incorrecto" 
                     onClose={hideModalInfo}
                     />
             <div className="container">
