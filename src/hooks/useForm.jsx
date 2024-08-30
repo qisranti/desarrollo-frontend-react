@@ -6,7 +6,10 @@ const useForm = (initialValues) => {
         const { name, value } = event.target;
         setValue({ ...values, [name]: value });
     };
-    return [ values, handleChange ];
+    const resetForm = () => {
+        setValue(initialValues);
+    }
+    return [ values, handleChange, resetForm ];
 }
 
 export default useForm;
