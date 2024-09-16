@@ -11,7 +11,7 @@ const Default = () => {
             <Logo />
             <Description />
             <OpenLink 
-                title="Learn React" 
+                title="Learn Reac" 
                 url="https://react.dev/" 
             />
             <OpenLink 
